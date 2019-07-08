@@ -23,6 +23,12 @@ public class Infinitum_UI {
         return controller
     }
     
+    public static func getObjectSlideshow(params: SlideshowParams) -> UIViewController {
+        let controller = SlideshowViewController()
+        controller.params = params
+        return controller
+    }
+    
     public static func getMenuBottom(params: BottomMenuParams) -> UIView {
         let view = BottomMenuView()
         view.params = params

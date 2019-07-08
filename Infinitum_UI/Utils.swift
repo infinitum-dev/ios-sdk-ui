@@ -10,10 +10,20 @@ import Foundation
 
 class Utils {
     
-    static func getCellForType(type : ListType) -> UITableViewCell.Type {
+    static func getCellForType(type : CellType) -> UITableViewCell.Type {
         switch type {
         case .Simple:
             return SimpleCell.self
+        }
+    }
+    
+    static func getPageFromType(type: PageType, object: ObjectEntity, layout: SlideshowLayout) -> SlideshowPageController {
+        switch type {
+        case .Simple:
+            let controller = SimpleContentViewController()
+            controller.object = object
+            controller.layout = layout
+            return controller
         }
     }
     

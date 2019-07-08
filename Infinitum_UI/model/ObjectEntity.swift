@@ -25,6 +25,7 @@ public class ObjectEntity {
         self.body = body
     }
     
+    
     /*
         Initializer for Detail object
     */
