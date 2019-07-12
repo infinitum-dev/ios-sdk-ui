@@ -8,12 +8,6 @@
 
 import Foundation
 
-public protocol BottomMenuCallback {
-    
-    func itemSelected(id: Int)
-    
-}
-
 public class BottomMenuParams {
     
     var listOptions: [MenuEntity]
@@ -29,17 +23,3 @@ public class BottomMenuParams {
         self.callback = callback
     }
 }
-
-public class BottomMenuLayout {
-    
-    var backgroundColor: UIColor = .darkGray
-    var tintColor: UIColor = .white
-    
-    public init(backgroundColor: UIColor, tintColor: UIColor) {
-        self.backgroundColor = backgroundColor
-        self.tintColor = tintColor
-    }
-    
-}
-
-

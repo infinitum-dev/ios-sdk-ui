@@ -48,14 +48,13 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = SimpleCell()
+        let cell = Utils.getUICellForType(type: params.cell) as! CellProtocol
         
         cell.object = params.objectList[indexPath.row]
         cell.separatorInset = .zero
         cell.selectionStyle = .none
         cell.backgroundColor = params.layout.cellBackground
-        cell.titleLabel.textColor = params.layout.titleColor
-        cell.bodyLabel.textColor = params.layout.bodyColor
+        cell.layout = params.layout
         
         return cell
     }

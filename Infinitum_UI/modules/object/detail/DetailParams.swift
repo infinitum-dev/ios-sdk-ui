@@ -19,26 +19,3 @@ public class DetailParams {
     }
     
 }
-
-public class DetailLayout {
-    
-    var background = UIColor.white;
-    var titleColor = UIColor.black;
-    var bodyColor = UIColor.black;
-    
-    /**
-     * Empty constructor for default options
-     */
-    public init() {}
-    
-    
-    /**
-     * Simple detail layout constructor
-     */
-    public init(background: UIColor, titleColor: UIColor, bodyColor: UIColor) {
-        self.background = background;
-        self.titleColor = titleColor;
-        self.bodyColor = bodyColor;
-    }
-    
-}

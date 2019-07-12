@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SimpleCell: UITableViewCell {
+class SimpleCell: UITableViewCell, CellProtocol {
     
     var titleLabel = UILabel()
     var bodyLabel = UILabel()
@@ -21,6 +21,13 @@ class SimpleCell: UITableViewCell {
             if let body = object?.body {
                 bodyLabel.text = body
             }
+        }
+    }
+    
+    var layout: ListLayout? {
+        didSet {
+            titleLabel.textColor = layout?.titleColor
+            bodyLabel.textColor = layout?.bodyColor
         }
     }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Tiago Carvalho. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Utils {
     
@@ -14,6 +14,13 @@ class Utils {
         switch type {
         case .Simple:
             return SimpleCell.self
+        }
+    }
+    
+    static func getUICellForType(type: CellType) -> UITableViewCell {
+        switch type {
+        case .Simple:
+            return SimpleCell()
         }
     }
     

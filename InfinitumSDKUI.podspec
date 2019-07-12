@@ -15,9 +15,13 @@ Pod::Spec.new do |spec|
 
   spec.author    = "FYI"
 
-  spec.source       = { :git => "github.com:infinitum-dev/ios-sdk-ui.git", :tag => '0.0.1'}
+  spec.source       = { :git => "https://github.com/infinitum-dev/ios-sdk-ui.git", :tag => '0.0.1'}
 
-  spec.source_files  = "Infinitum_UI/**/*.{h,m,swift}"
+  spec.source_files  = "Infinitum_UI/**/*.swift"
+
+  spec.swift_version = '4.0'
+
+  spec.ios.deployment_target  = '11.0'
 
 
 end

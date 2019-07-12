@@ -6,7 +6,7 @@
 //  Copyright © 2019 Tiago Carvalho. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class ObjectEntity {
     

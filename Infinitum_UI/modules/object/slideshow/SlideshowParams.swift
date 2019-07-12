@@ -8,37 +8,6 @@
 
 import Foundation
 
-public protocol SlideshowCallback {
-    
-    func onClick( object: ObjectEntity)
-    
-}
-
-public class SlideshowLayout {
-    
-    var background = UIColor.black
-    var headerColor = UIColor.brown
-    var titleColor = UIColor.white
-    var bodyColor = UIColor.white
-    
-    /**
-     *  Empty constructor for default values
-     */
-    public init() {
-    }
-    
-    /**
-     * Constructor for Simple cell
-     */
-    public init(background: UIColor, headerColor: UIColor, titleColor: UIColor, bodyColor: UIColor) {
-        self.background = background
-        self.headerColor = headerColor
-        self.titleColor = titleColor
-        self.bodyColor = bodyColor
-    }
-    
-}
-
 public class SlideshowParams {
     
     var layout: SlideshowLayout
